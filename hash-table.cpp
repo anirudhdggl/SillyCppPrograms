@@ -108,3 +108,18 @@ class Map {
       }
 };
 
+
+int main() {
+      Map<string,int> *map = new Map<string,int> ();
+      map->insert("ab",3);
+      map->insert("z",34);
+      map->insert("ab", 4);
+      map->insert("ab", 6);
+      map->insert("ab", 8);
+      map->insert("ba", 7);
+      int val = map->find("ab");
+      cout<<val<<endl;
+      
+      map->showMap();
+      return 0;
+}
